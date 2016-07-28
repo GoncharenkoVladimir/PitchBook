@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 var isDevelopment = !process.env.NODE_ENV || process.NODE_ENV == 'development';
 
 gulp.task('styles', function(){
-    return gulp.src('frontend/styles/*.scss', {base: 'frontend'})
+    return gulp.src('frontend/styles/style.scss', {base: 'frontend'})
         .pipe(gulpIf(isDevelopment, sourcemaps.init()))
         .pipe(sass())
         .pipe(gulpIf(isDevelopment, sourcemaps.write()))
