@@ -2,6 +2,10 @@
 $openSans: Open Sans, Arial, sans-serif;
 $raleway: Raleway, Arial, sans-serif;
 
+p, ul, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     .content{
@@ -192,13 +196,102 @@ body {
                     display: block;
                     height: 46px;
                     color: #ccc;
-                    font-family: FontAwesome;
                     font-size: 48px;
                     font-weight: 400;
                 }
             }
             .link:first-child{
                 margin-left: 0;
+            }
+        }
+    }
+
+    .transition{
+        padding: 147px 0 114px;
+        background-color: whitesmoke;
+        overflow: hidden;
+        .tabs{
+            float: left;
+            .tab{
+                width: 112px;
+                height: 112px;
+                box-sizing: border-box;
+                color: white;
+                font-family: $openSans;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 20px;
+                text-transform: uppercase;
+                padding-top: 50px;
+                text-align: center;
+                background: #37495e;
+                transition: all 0.3s;
+            }
+            .tab:hover{
+                background: #ff8b38;
+                transition: all 0.3s;
+            }
+        }
+        .tab_panels{
+            float: right;
+            height: 142px;
+            max-width: 899px;
+            width: 100%;
+            position: relative;
+            .panel{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                .info{
+                    max-width: 476px;
+                    width: 100%;
+                    float: left;
+                    .title{
+                        color: black;
+                        font-family: $openSans;
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-bottom: 52px;
+                    }
+                    .description{
+                        margin-bottom: 51px;
+                        p{
+                            color: #86878b;
+                            font-family: $openSans;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 20px;
+                        }
+                        p:first-child{
+                            margin-bottom: 15px;
+                        }
+                    }
+                    .button{
+                        background: #ff8b38;
+                        width: 121px;
+                        height: 46px;
+                        border-radius: 2px;
+                        text-align: center;
+                        color: white;
+                        font-family: $openSans;
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 20px;
+                        padding-top: 16px;
+                        box-sizing: border-box;
+                        transition: all 0.3s;
+                    }
+                    .button:hover{
+                        background: #37495e;
+                        transition: all 0.3s;
+                    }
+                }
+                img{
+                    float: right;
+                    width: 320px;
+                    height: 253px;
+                }
             }
         }
     }
