@@ -359,9 +359,16 @@ body {
                 .item{
                     list-style: none;
                     .icon{
+                        width: 40px;
+                        height: 40px;
                         color: #ff8b38;
+                        border-radius: 50%;
+                        border: 2px solid #ff8b38;
+                        box-sizing: border-box;
+                        padding-top: 10px;
+                        text-align: center;
                         float: left;
-                        .fa-stack-1x{
+                        i{
                             font-size: 16px;
                         }
                     }
@@ -414,6 +421,77 @@ body {
         img{
             float: right;
             box-shadow: 0 13px 29px 0 rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    .awesome{
+        padding: 105px 0;
+        .title{
+            color: #212121;
+            font-family: $raleway;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 43px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .title:after{
+            content: "";
+            width: 64px;
+            height: 2px;
+            background: #ff8b38;
+            margin: 29px auto 0;
+            display: block;
+        }
+        .description{
+            color: #86878b;
+            font-family: $openSans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .list{
+            text-align: center;
+            .item{
+                display: inline-block;
+                list-style: none;
+                max-width: 352px;
+                width: 100%;
+                .title_item{
+                    color: #212121;
+                    font-family: $openSans;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 17px;
+                    margin: 29px 0 25px;
+                }
+                .description_item{
+                    color: #86878b;
+                    font-family: $openSans;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+                .icon{
+                    width: 70px;
+                    height: 70px;
+                    color: #ff8b38;
+                    border-radius: 50%;
+                    border: 2px solid #ff8b38;
+                    box-sizing: border-box;
+                    padding-top: 18px;
+                    margin: auto;
+                    i{
+                        font-size: 32px;
+                    }
+                }
+            }
+            .item:nth-child(2){
+                margin: 0 18px;
+            }
         }
     }
 }
