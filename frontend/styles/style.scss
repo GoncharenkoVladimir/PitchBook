@@ -159,7 +159,7 @@ body {
                 }
             }
         }
-        .form{
+        >.form{
             float: right;
             width: 360px;
             .header_form{
@@ -715,6 +715,66 @@ body {
             color: #37495e;
             background: white;
             transition: all 0.3s;
+        }
+    }
+    .contacts{
+        padding: 108px 0 80px;
+        .form{
+            form{
+                input{
+                    display: block;
+                }
+                input[type="text"]{
+                    width: 100%;
+                    height: 31px;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: 1px solid rgba(0, 0, 1, 0.16);
+                    margin: 0 0 30px;
+                    padding-left: 14px;
+                    outline: none;
+                    box-sizing: border-box;
+                    clear: both;
+                }
+                input[type="submit"]{
+                    width: 148px;
+                    height: 46px;
+                    background: #ff9b51;
+                    color: white;
+                    font-family: $openSans;
+                    font-size: 15px;
+                    font-weight: 600;
+                    border: none;
+                    padding: 12px 0;
+                    text-align: center;
+                    cursor: pointer ;
+                    display: block;
+                    clear: both;
+                    border-radius: 2px;
+                    margin: 13px auto 0;
+                    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.75);
+                    box-shadow: 0 0 2px 0 rgba(0,0,0,0.75);
+                }
+                textarea{
+                    height: 147px;
+                    max-width: 527px;
+                    width: 100%;
+                    float: right;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: 1px solid rgba(0, 0, 1, 0.16);
+                    resize: none;
+                    outline: none;
+                }
+                .text{
+                    float: left;
+                    max-width: 527px;
+                    width: 100%;
+                }
+            }
         }
     }
 }
