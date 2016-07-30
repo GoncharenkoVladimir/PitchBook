@@ -1,1 +1,1 @@
-//
+initSlider("#image_slider");
