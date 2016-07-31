@@ -228,6 +228,7 @@ body {
         overflow: hidden;
         .top_banner{
             background: url("../img/header-panel.png") center top no-repeat;
+            background-size: cover;
             width: 100%;
             overflow: hidden;
             padding: 140px 0 138px;
@@ -925,7 +926,8 @@ body {
 
     .stylish{
         padding: 66px 0 63px;
-        background: url("../img/paralax.jpg") center top no-repeat fixed;
+        background: url("../img/paralax.jpg") 50% 0 no-repeat fixed;
+        background-size: cover;
         .title{
             color: white;
             font-family: $raleway;
