@@ -8,5 +8,3 @@ function tabsInit(tab){
         $('.panel[name='+ panel+']').attr('name', panel).addClass('active');
     })
 }
-
-tabsInit("#tabs");

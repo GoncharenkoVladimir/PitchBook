@@ -1,4 +1,6 @@
 @import "font-awesome.scss";
+
+
 $openSans: Open Sans, Arial, sans-serif;
 $raleway: Raleway, Arial, sans-serif;
 $ptSans: 'PT Sans', sans-serif;
@@ -106,9 +108,11 @@ p, ul, h1, h2, h3, h4, h5, h6{
 body {
     margin: 0;
     .content{
-        max-width: 1100px;
+        max-width: 1130px;
         width: 100%;
-        margin: auto    ;
+        margin: auto;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
     header {
         height: 70px;
@@ -487,7 +491,7 @@ body {
         }
         .tab_panels{
             float: right;
-            height: 142px;
+            min-height: 332px;
             max-width: 899px;
             width: 100%;
             position: relative;
@@ -1035,6 +1039,8 @@ body {
                     border-bottom: 1px solid rgba(0, 0, 1, 0.16);
                     resize: none;
                     outline: none;
+                    padding-left: 14px;
+                    box-sizing: border-box;
                 }
                 .text{
                     float: left;
@@ -1086,6 +1092,481 @@ body {
             font-family: $ptSans;
             font-size: 12px;
             font-weight: 400;
+        }
+    }
+}
+
+
+$breakpoint-mobile: 320px;
+@media (min-width : $breakpoint-mobile) {
+    body{
+        header{
+            nav{
+                .mobmenu{
+                    display: block;
+                    float: right;
+                    font-size: 30px;
+                    margin-right: 15px;
+                    margin-top: 20px;
+                    color: white;
+                }
+                .mobile_menu{
+                    position: absolute;
+                    background: #28455e;
+                    top: 70px;
+                    width: 100%;
+                    color: white;
+                    left: 0;
+                    display: none;
+                    padding: 15px;
+                    box-sizing: border-box;
+                    li{
+                        list-style: none;
+                        padding-bottom: 5px;
+                        border-bottom: 1px solid white;
+                        margin-bottom: 5px;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            text-transform: uppercase;
+
+                        }
+                        a:visited{
+                            color: white;
+                        }
+                    }
+                    li:last-child{
+                        border-bottom: none;
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                    }
+                }
+                .active{
+                    display: block;
+                }
+                .main_menu{
+                    display: none;
+                }
+            }
+        }
+       .content_block {
+           .top_banner{
+               padding: 0 0 30px;
+               .content{
+                   .info{
+                       .title{
+                           font-size: 20px;
+                           text-align: center;
+                           line-height: 27px;
+                           font-weight: 600;
+                       }
+                       .title:after{
+                           margin: 32px auto 0 ;
+                       }
+                       .description{
+                           text-align: center;
+                       }
+                       .button{
+                           margin: auto;
+                       }
+                   }
+                   >.form{
+                       margin-top: 20px;
+                       width: 100%;
+                       form{
+                           input[type="text"]{
+                               margin: 0 0 36px;
+                               max-width: none;
+                           }
+
+                       }
+                   }
+               }
+            }
+           .social_media{
+               .info{
+                   float: none;
+                   max-width: none;
+                   .title{
+                        text-align: center;
+                   }
+                   .description{
+                       text-align: center;
+                   }
+               }
+               .social_link {
+                   text-align: center;
+                   .link{
+                       margin-right: 0;
+                       display: inline-block;
+                       a{
+                           font-size: 40px;
+                       }
+                   }
+               }
+           }
+           .transition {
+               padding: 30px 0 30px;
+               .tabs{
+                   float: none;
+                   width: 100%;
+                   max-width: 290px;
+                   margin: auto;
+                   overflow: hidden;
+                   .tab{
+                       float: left;
+                       width: 96px;
+                       height: 96px;
+                       padding-top: 40px;
+                   }
+               }
+               .tab_panels {
+                   .panel{
+                       position: relative;
+                       display: none;
+                       img{
+                           width: 100%;
+                           max-width: 320px;
+                           float: none;
+                           margin: auto;
+                           display: block;
+                       }
+                       .info{
+                           margin-bottom: 15px;
+                           max-width: none;
+                           .button{
+                               margin: auto;
+                           }
+                           .title{
+                               margin-top: 20px;
+                           }
+                       }
+                   }
+                   .active{
+                       display: block;
+                   }
+               }
+           }
+           .sub_list{
+               padding: 30px 0;
+               img{
+                   width: 100%;
+                   float: none;
+                   max-width: 453px;
+                   margin: auto;
+                   display: block;
+               }
+               .info{
+                   margin-left: 0;
+                   width: 100%;
+                   float: none;
+                   margin-top: 30px;
+                   max-width: none;
+                   .title{
+                       text-align: center;
+                   }
+                   .title:after{
+                       margin: 25px auto;
+                   }
+                   .description{
+                       text-align: center;
+                   }
+               }
+           }
+           .picture_section{
+               padding: 30px 0;
+               img{
+                   width: 100%;
+                   float: none;
+                   max-width: 453px;
+                   display: block;
+                   margin: auto;
+               }
+               .info{
+                   margin-left: 0;
+                   width: 100%;
+                   float: none;
+                   max-width: none;
+                   .title{
+                       text-align: center;
+                   }
+                   .title:after{
+                       margin: 26px auto 0;
+                   }
+                   .description{
+                       text-align: center;
+                       margin-bottom: 15px;
+                   }
+               }
+           }
+           .awesome{
+               padding: 30px 0;
+             .list{
+                 .item{
+                     margin: 15px auto;
+                     clear: both;
+                     float: none;
+                 }
+             }
+           }
+           .pricing{
+               padding: 30px 0;
+               .price {
+                   .item{
+                       width: 100%;
+                       margin: 10px auto;
+                       max-width: 343px;
+                       display: block;
+                   }
+                   .item:nth-child(2){
+                       margin: 10px auto;
+                   }
+               }
+           }
+           .feedback{
+               padding: 30px 0;
+               .list{
+                   .item:nth-child(2){
+                       margin: 0;
+                   }
+               }
+           }
+           .contacts{
+               padding: 30px 0;
+               .form {
+                   form {
+                       .text{
+                           float: none;
+                           margin: auto;
+                       }
+                       textarea{
+                           margin: 0 auto 30px;
+                           float: none;
+                           display: block;
+                       }
+                   }
+               }
+
+           }
+       }
+        footer {
+            .social_link{
+                text-align: center;
+                .link{
+                    margin-right: 18px;
+                }
+            }
+        }
+    }
+}
+@media (min-width : 768px) {
+    body {
+        .content_block{
+            .top_banner {
+                .content {
+                    .info{
+                        float: none;
+                        margin: auto;
+                    }
+                    .form{
+                        max-width: 360px;
+                        float: none;
+                        margin: 20px auto;
+                    }
+                }
+            }
+            .social_media {
+                .social_link {
+                    float: none;
+                    margin: 5px auto 0;
+                    .link{
+                        margin-right: 56px;
+                    }
+                    .fb{
+                        margin-right: 56px;
+                    }
+                    .tw{
+                        margin-right: 55px;
+                    }
+                    .gp{
+                        margin-right: 28px;
+                    }
+                    .link:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width : 1024px) {
+    body {
+        .content_block {
+            .top_banner {
+                padding: 140px 0 138px;
+                .content {
+                    .info {
+                        float: left;
+                        .title{
+                            font-size: 36px;
+                            font-weight: 400;
+                            line-height: 44px;
+                            text-align: left;
+                        }
+                        .title:after{
+                            margin: 32px 0;
+                        }
+                        .description{
+                            text-align: left;
+                        }
+                        .button{
+                            margin: 0;
+                        }
+                    }
+                    .form{
+                        float: right;
+                        margin: 0;
+                        form{
+                            input[type="text"]{
+                                max-width: 285px;
+                                margin: 0 38px 36px 37px;
+                            }
+                        }
+
+                    }
+                }
+            }
+            .transition{
+                padding: 147px 0 114px;
+                .tabs{
+                    float: left;
+                    max-width: 80px;
+                    .tab{
+                        width: 80px;
+                        height: 80px;
+                        padding-top: 34px;
+                        float: none;
+                    }
+                }
+                .tab_panels {
+                    .panel{
+                        position: absolute;
+                        .info{
+                            max-width: 477px;
+                            .button{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .sub_list{
+                padding: 107px 0 131px;
+                img{
+                    margin-top: 20px;
+                    float: left;
+                }
+                .info{
+                    max-width: 434px;
+                    width: 100%;
+                    float: right;
+                    margin-left: 0;
+                    .title{
+                        text-align: left;
+                    }
+                    .title:after{
+                        margin: 25px 0;
+                    }
+                    .description{
+                        text-align: left;
+                    }
+                }
+            }
+            .picture_section{
+                padding: 90px 0 130px;
+                .info{
+                    float: left;
+                    max-width: 474px;
+                    width: 100%;
+                    .title{
+                        text-align: left;
+                    }
+                    .title:after{
+                        margin: 25px 0;
+                    }
+                    .description{
+                        text-align: left;
+                    }
+                }
+                img{
+                    float: right;
+                }
+            }
+            .awesome{
+                padding: 100px 0 99px;
+                .list {
+
+                    .item{
+                        float: left;
+                        clear: none;
+                        width: 32%;
+                        max-width: 352px;
+                    }
+                    .item:nth-child(2){
+                        margin: 15px 2%;
+                    }
+                }
+            }
+            .pricing{
+                padding: 100px 0 92px;
+                .price{
+                    .item{
+                        display: inline-block;
+                        width: 32%;
+                    }
+                    .item:nth-child(2){
+                        margin: 10px 1.5%;
+                    }
+                }
+
+            }
+            .feedback{
+                padding: 102px 0 92px;
+
+            }
+            .contacts{
+                padding: 99px 0 80px;
+                .form {
+                    form {
+                        .text{
+                            margin-bottom: 11px;
+                            float: left;
+                            width: 50%;
+                        }
+                        textarea{
+                            float: right;
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width : 1224px) {
+    body{
+        header{
+            nav{
+                .mobmenu{
+                    display: none;
+                }
+                .main_menu{
+                    display: block;
+                }
+                .mobile_menu{
+                    display: none;
+                }
+            }
         }
     }
 }
