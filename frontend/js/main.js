@@ -1,4 +1,4 @@
-initSlider("#image_slider");
+initSlider("#customSlider");
 tabsInit("#tabs");
 
 $('.mobmenu').on('click', function(){
