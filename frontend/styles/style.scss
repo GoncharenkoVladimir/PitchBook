@@ -716,7 +716,7 @@ body {
             font-weight: 400;
             line-height: 20px;
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 63px;
         }
         .list{
             text-align: center;
@@ -1029,7 +1029,7 @@ body {
                     -o-transition:All 0.3s ease;
                 }
                 textarea{
-                    height: 147px;
+                    height: 152px;
                     max-width: 527px;
                     width: 100%;
                     float: right;
@@ -1503,7 +1503,7 @@ $breakpoint-mobile: 320px;
                 }
             }
             .awesome{
-                padding: 100px 0 99px;
+                padding: 100px 0 85px;
                 .list {
 
                     .item{
@@ -1518,7 +1518,7 @@ $breakpoint-mobile: 320px;
                 }
             }
             .pricing{
-                padding: 100px 0 92px;
+                padding: 100px 0 84px;
                 .price{
                     .item{
                         display: inline-block;
@@ -1531,8 +1531,15 @@ $breakpoint-mobile: 320px;
 
             }
             .feedback{
-                padding: 102px 0 92px;
-
+                padding: 102px 0 94px;
+                .list{
+                    .item:nth-child(2){
+                        margin: 0 118px;
+                    }
+                    .item{
+                        text-align: left;
+                    }
+                }
             }
             .contacts{
                 padding: 99px 0 80px;
@@ -1551,6 +1558,13 @@ $breakpoint-mobile: 320px;
                 }
             }
         }
+        footer {
+            .social_link {
+                .link{
+                    margin-right: 23px;
+                }
+            }
+        }
     }
 }
 @media (min-width : 1224px) {
@@ -1565,6 +1579,101 @@ $breakpoint-mobile: 320px;
                 }
                 .mobile_menu{
                     display: none;
+                }
+            }
+        }
+        .content_block {
+            .social_media {
+                .info{
+                    max-width: 361px;
+                    float: left;
+                    .title{
+                        text-align: left;
+                    }
+                    .description{
+                        text-align: left;
+                    }
+                }
+                .social_link{
+                    float: right;
+                    margin: 5px 0 0;
+                    text-align: left;
+                    .link{
+                        a{
+                            font-size: 48px;
+                        }
+                    }
+                }
+            }
+            .transition {
+                .tabs{
+                    max-width: 112px;
+                    .tab{
+                        width: 112px;
+                        height: 111px;
+                        padding-top: 46px;
+                    }
+                }
+
+                .tab_panels {
+                    .panel {
+                        .info{
+                            margin-bottom: 0;
+                            .title{
+                                margin-top: 0;
+                            }
+                        }
+                        img{
+                            margin-top: 23px;
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .picture_section {
+                img{
+                    position: relative;
+                    left: 25px;
+                }
+            }
+            .sub_list {
+                .info{
+                    margin-top: 0;
+                    float: left;
+                    margin-left: 194px;
+                }
+            }
+            .awesome {
+                .list {
+                    .item{
+                        width: 100%;
+                    }
+                    .item:nth-child(2){
+                        margin: 15px 18px;
+                    }
+                }
+            }
+            .pricing {
+                .price {
+                    .item {
+                        max-width: 342px;
+                        width: 100%;
+                    }
+                    .item:nth-child(2){
+                        margin: 0 31px;
+                    }
+                }
+            }
+            .contacts {
+                .form {
+                    form {
+                        .text{
+                            width: 100%;
+                        }
+                        textarea{
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
