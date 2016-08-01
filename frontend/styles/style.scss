@@ -48,12 +48,12 @@ p, ul, h1, h2, h3, h4, h5, h6{
     opacity: 0.9;
 }
 .prev{
-    background: #000 url('https://dl.dropboxusercontent.com/u/65639888/image/prev.png') no-repeat center;
-    left: 0px;
+    background: url('../img/left-arrow.png') no-repeat center;
+    left: 0;
 }
 .next{
-    background: #000 url('https://dl.dropboxusercontent.com/u/65639888/image/next.png') no-repeat center;
-    right: 0px;
+    background: url('../img/right-arrow.png') no-repeat center;
+    right: 0;
 }
 .info {
     width: 100%;
@@ -142,6 +142,7 @@ body {
                         height: 70px;
                         box-sizing: border-box;
                     }
+
                 }
                 .item_menu:hover{
                     background: #ff8b38;
@@ -183,6 +184,9 @@ body {
                                 a:visited{
                                     color: #86878b;
                                 }
+                                a:link{
+                                    color: #86878b;
+                                }
                             }
                             li:hover a{
                                 color: #ff8b38;
@@ -202,6 +206,9 @@ body {
                                 font-size: 10px;
                             }
                             a:visited{
+                                color: #86878b;
+                            }
+                            a:link{
                                 color: #86878b;
                             }
                             a:hover{
@@ -1041,6 +1048,8 @@ body {
                     outline: none;
                     padding-left: 14px;
                     box-sizing: border-box;
+                    overflow: auto;
+                    font-family: $openSans;
                 }
                 .text{
                     float: left;
@@ -1072,6 +1081,9 @@ body {
                 -o-transition:All 1s ease;
                 a:visited{
                     color: #ccc;
+                }
+                a:link{
+                    color: #ccc
                 }
             }
             .link:hover{
@@ -1617,6 +1629,7 @@ $breakpoint-mobile: 320px;
 
                 .tab_panels {
                     .panel {
+                        display: block;
                         .info{
                             margin-bottom: 0;
                             .title{
